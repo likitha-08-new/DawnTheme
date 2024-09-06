@@ -1,0 +1,15 @@
+.w-full {
+    width: 100%;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.grid.left {
+    flex-direction: row;
+}
+
+.grid.right {
+    flex-direction: row-reverse;
+}

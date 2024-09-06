@@ -1,0 +1,323 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_i7PYna": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yh7Eb7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_EgyF8h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_4iXQHx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_yh7Eb7",
+        "text_EgyF8h",
+        "button_4iXQHx"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "slideshow_NAXmDA": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_CyGn9J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/young-hip-woman-at-carnival_925x_c4d342f5-d11f-4f91-8cd4-593b9a1ed647.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_iXgBwz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture_925x_31555957-6e31-46a8-a7b2-3bf03aa66611.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CyGn9J",
+        "slide_iXgBwz"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multirow_zKBjHD": {
+      "type": "multirow",
+      "blocks": {
+        "row_6Qt3BU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/man-adjusts-blue-tuxedo-bowtie_925x_c8c68d94-8d3d-4106-808f-1355ac6d6e78.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_JbHiC6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/young-female-models-denim_925x_f859846e-0fc9-45d2-a308-88407e82db46.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_8ad8UJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-in-neutral-colors-by-window.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6Qt3BU",
+        "row_JbHiC6",
+        "row_8ad8UJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-3",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_eVwhWK": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/gbLmku5QACM?feature=shared",
+        "cover_image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "custom_image_with_text_dC69dM": {
+      "type": "custom-image-with-text",
+      "disabled": true,
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/self-serve-coffee-shop.jpg",
+        "image_position": "left",
+        "heading": "TestHeading",
+        "description": "<p>Test description<\/p>",
+        "button_label": "click here",
+        "button_url": "shopify:\/\/collections\/all",
+        "button_background": ""
+      }
+    },
+    "hotspot_image_with_product_slider_HNRHFq": {
+      "type": "hotspot-image-with-product-slider",
+      "blocks": {
+        "hotspot_TtBEnF": {
+          "type": "hotspot",
+          "settings": {
+            "horizontal_position": 34,
+            "Vertical_position": 21,
+            "mobile_horizontal_position": 29,
+            "mobile_Vertical_position": 17,
+            "hotspot_product": "product"
+          }
+        },
+        "hotspot_CHY6i6": {
+          "type": "hotspot",
+          "settings": {
+            "horizontal_position": 28,
+            "Vertical_position": 36,
+            "mobile_horizontal_position": 23,
+            "mobile_Vertical_position": 35,
+            "hotspot_product": "water-resistant-snow-hoodie"
+          }
+        },
+        "hotspot_CBHVia": {
+          "type": "hotspot",
+          "settings": {
+            "horizontal_position": 78,
+            "Vertical_position": 65,
+            "mobile_horizontal_position": 80,
+            "mobile_Vertical_position": 68,
+            "hotspot_product": "beginners-guide-to-snowboarding-dvd"
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_TtBEnF",
+        "hotspot_CHY6i6",
+        "hotspot_CBHVia"
+      ],
+      "settings": {
+        "padding_top": 10,
+        "padding_bottom": 10,
+        "heading": "Shop the Look",
+        "image": "shopify:\/\/shop_images\/newimage_8cf81a96-d590-46a0-bd86-84cadebf1e49.webp",
+        "slide_per_page": 1,
+        "pagination": false,
+        "arrows": true,
+        "autoplay": false,
+        "autoplay_interval": 3
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_i7PYna",
+    "slideshow_NAXmDA",
+    "multirow_zKBjHD",
+    "video_eVwhWK",
+    "featured_collection",
+    "custom_image_with_text_dC69dM",
+    "hotspot_image_with_product_slider_HNRHFq"
+  ]
+}

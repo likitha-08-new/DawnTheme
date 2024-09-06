@@ -1,0 +1,29 @@
+{% assign rating = product.metafields.custom.rating | plus: 0 | round: 0 %}
+<a href='{{ product.url }}' data-handle="{{ product.handle }}" class='hotspot-product-card'>
+  <div class='hotspot-product-card--image-wrapper'>
+    {% render 'responsive-picture', desktopImage: product.featured_image %}
+
+    {% if product.tags contains 'onsale' %}
+      <div class='badge-onsale'>On Sale</div>
+    {% endif %}
+  </div>
+  <div class='hotspot-product-card--content flex flex-col items-center gap-3'>
+    <div class='igloo-title'>IGLOO</div>
+
+    <div class='title'>{{ product.title }}</div>
+    
+    {% render 'star-rating', rating: rating %}
+    
+    {% if product.compare_at_price == blank %}
+      <div class='flex gap-3 price-container'>
+        <span>from</span>
+        <div class='price'>{{ product.price | money_with_currency }}</div>
+      </div>
+    {% else %}
+      <div class='flex gap-3 discount-container'>
+        <div class='price'>{{ product.price | money_with_currency }}</div>
+        <div class='compare_at_price line-through'>{{ product.compare_at_price | money_with_currency }}</div>
+      </div>
+    {% endif %}
+  </div>
+</a>

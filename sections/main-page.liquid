@@ -1,0 +1,165 @@
+{% comment %}HTML  {% endcomment %}
+<div class="container">
+    <div class="input-section">
+        <input type="text" id="image-url" placeholder="URL INPUT ends with .jpeg, .jpg, .gif, or .png">
+        <button id="add-image">Add Image</button>
+    </div>
+    <div class="search-section">
+        <input type="text" id="search-term" placeholder="Search for image">
+    </div>
+    <div id="gallery" class="gallery"></div>
+</div>
+
+<!--Style  -->
+<style>
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#image-url {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #9966cc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#add-image {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #9966cc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#add-image:hover {
+    background-color: #7a4fa1;
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+#search-term {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cc9966;
+    border-radius: 4px;
+    background-color: #f7c6a3;
+    color: black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 4px solid #9966cc;
+    padding: 5px;
+    background-color: #f0e7ff;
+}
+</style>
+
+<!--JS  -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const addButton = document.getElementById('add-image');
+    const imageUrlInput = document.getElementById('image-url');
+    const gallery = document.getElementById('gallery');
+    const searchInput = document.getElementById('search-term');
+
+    // Array of dummy image URLs
+    const dummyImages = [
+        'https://via.placeholder.com/150/cccccc/808080?text=Image1',
+        'https://via.placeholder.com/150/cccccc/808080?text=Image2',
+        'https://via.placeholder.com/150/cccccc/808080?text=Image3',
+        'https://via.placeholder.com/150/cccccc/808080?text=Image4',
+        'https://via.placeholder.com/150/cccccc/808080?text=Image5',
+        'https://via.placeholder.com/150/cccccc/808080?text=Image6'
+    ];
+
+    let currentImageIndex = 0; // To keep track of the current image to replace
+
+    // Function to add or replace an image in the gallery
+    function addImage(imageUrl) {
+        console.log('Trying to add image:', imageUrl);
+        if (imageUrl && (imageUrl.startsWith('http://') || imageUrl.startsWith('https://'))) {
+            const imgElements = gallery.getElementsByTagName('img');
+            if (currentImageIndex < imgElements.length) {
+                imgElements[currentImageIndex].src = imageUrl; // Replace the image
+                currentImageIndex++; // Move to the next image slot
+                console.log('Image added successfully');
+            } else {
+                alert('The gallery is full. No more images can be added.');
+            }
+        } else {
+            alert('Please enter a valid image URL.');
+        }
+    }
+
+    // Load dummy images initially
+    dummyImages.forEach(imageUrl => {
+        const img = document.createElement('img');
+        img.src = imageUrl;
+        gallery.appendChild(img);
+    });
+
+    // Function to filter images based on the search term
+    function filterImages() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const images = gallery.getElementsByTagName('img');
+
+        Array.from(images).forEach(img => {
+            const imageUrl = img.src.toLowerCase();
+            if (imageUrl.includes(searchTerm)) {
+                img.style.display = 'block'; // Show the image
+            } else {
+                img.style.display = 'none'; // Hide the image
+            }
+        });
+    }
+
+    // Add image button click event
+    addButton.addEventListener('click', function() {
+        const imageUrl = imageUrlInput.value.trim();
+        addImage(imageUrl);
+        imageUrlInput.value = '';  // Clear the input field
+    });
+
+    // Search input keyup event to filter images in real-time
+    searchInput.addEventListener('keyup', filterImages);
+});
+
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.page.name",
+  "tag": "section",
+  "class": "section",
+  "presets": [
+    {
+      "name": "t:sections.page.presets.name"
+    }
+  ]
+}
+{% endschema %}

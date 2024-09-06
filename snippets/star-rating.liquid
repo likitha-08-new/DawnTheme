@@ -1,0 +1,15 @@
+{% assign full_stars = rating %}
+{% assign half_star = rating | minus: full_stars %}
+{% assign empty_stars = 5 | minus: full_stars | minus: half_star %}
+
+<div class="star-rating">
+  {% for i in (1..full_stars) %}
+    <span class="star full">&#9733;</span>
+  {% endfor %}
+  {% if half_star > 0 %}
+    <span class="star half">&#9733;</span>
+  {% endif %}
+  {% for i in (1..empty_stars) %}
+    <span class="star empty">&#9734;</span>
+  {% endfor %}
+</div>
